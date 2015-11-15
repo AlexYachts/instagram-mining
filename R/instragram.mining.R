@@ -1,22 +1,7 @@
 
-source("./R/unlist.with.NA.R")
-source("./R/call.api.R")
-source("./R/get.user.R")
-source("./R/get.follows.R")
-source("./R/get.followed.R")
-source("./R/get.media.R")
-source("./R/get.who.liked.R")
-source("./R/get.who.commented.R")
-source("./R/get.media.id.R")
-source("./R/get.edgelist.follows.R")
-source("./R/get.edgelist.followed.R")
-source("./R/get.geo.R")
-token <- Sys.getenv("TOKEN", "")
+source("./R/utils.R")
 
-require(plyr)
-require(rjson)
-require(curl)
-
+# Data about self
 
 self.info <- get.user("self", token)
 
@@ -41,7 +26,7 @@ self.edgelist.followed <- get.edgelist.followed(self.info.id, token)
 self.geo <- get.geo(self.info.id, token)
 
 
-## follows ##
+# Data about follows
 
 follows <- self.info.follows
 

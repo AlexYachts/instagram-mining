@@ -12,6 +12,7 @@ source("./R/get.media.id.R")
 source("./R/get.edgelist.follows.R")
 source("./R/get.edgelist.followed.R")
 source("./R/get.geo.R")
+source("./R/get.geo.new.R")
 
 # token
 token <- Sys.getenv("TOKEN", "")

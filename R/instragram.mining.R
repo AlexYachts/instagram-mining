@@ -25,6 +25,8 @@ self.edgelist.followed <- get.edgelist.followed(self.info.id, token)
 
 self.geo <- get.geo(self.info.id, token)
 
+self.geo.new <- get.geo.new(self.info.id, token)
+
 
 # Data about follows
 
@@ -45,6 +47,8 @@ follows.edgelist.follows <- rbind.fill(lapply(self.info.follows,get.edgelist.fol
 follows.edgelist.followed <- rbind.fill(lapply(follows,get.edgelist.followed, token))
 
 follows.geo <- rbind.fill(lapply(follows,get.geo, token))
+
+follows.geo.new <- rbind.fill(lapply(follows,get.geo.new, token))
 
 
 

@@ -1,18 +1,18 @@
 # functions
 
-source("./R/unlist.with.NA.R")
-source("./R/call.api.R")
-source("./R/get.user.R")
-source("./R/get.follows.R")
-source("./R/get.followed.R")
-source("./R/get.media.R")
-source("./R/get.who.liked.R")
-source("./R/get.who.commented.R")
-source("./R/get.media.id.R")
-source("./R/get.edgelist.follows.R")
-source("./R/get.edgelist.followed.R")
-source("./R/get.geo.R")
-source("./R/get.geo.new.R")
+source("./R/Basic Functions/unlist.with.NA.R")
+source("./R/Basic Functions/call.api.R")
+source("./R/Basic Functions/get.user.R")
+source("./R/Basic Functions/get.follows.R")
+source("./R/Basic Functions/get.followed.R")
+source("./R/Basic Functions/get.media.R")
+source("./R/Basic Functions/get.who.liked.R")
+source("./R/Basic Functions/get.who.commented.R")
+source("./R/Basic Functions/get.media.id.R")
+source("./R/Basic Functions/get.edgelist.follows.R")
+source("./R/Basic Functions/get.edgelist.followed.R")
+source("./R/Basic Functions/get.geo.R")
+
 
 # token
 token <- Sys.getenv("TOKEN", "")

@@ -1,5 +1,5 @@
 get.geo <- function(user, token){
-  tryCatch(
+
   call <- get.user(user, token)
   
   if(!is.na(call[1])){
@@ -95,6 +95,5 @@ get.geo <- function(user, token){
   else{
     return(NULL)
   }
-  ,
-  error = function(e) NULL) 
+   
 }

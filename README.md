@@ -108,7 +108,7 @@ restaurants offering aperitifs.
 Several different models were specified, to test different likelihood assumptions, different ways of specifying the temporal component and to
 evaluate how well the INLA approach fits LBSNs’ data. The best model uses as a target variable the logarithm of the density of the people in a certain area, and fully exploits the spatio-temporal information.
 
-![Model structure](/images/formula1.png)
+![Model structure](/images/formula1.PNG)
 
 The variables of the modal can be studied separately. First, the posterior mean of the main
 spatial effect ζ = exp(u<sub>i</sub> +v<sub>i</sub>) can be extracted and mapped, as we can see below. It is clear that the spatial effect is higher in the

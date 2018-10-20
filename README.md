@@ -119,10 +119,10 @@ in the following way:
 
 where
 * µ<sub>i</sub> is the mean for the area i
-* s<sup>2</sup><sub>i</sub> = σ<sup>2</sup><sub>u</sub>/N<sub>i</sub> is the variance for the same area
+* s<sub>i</sub><sup>2</sup> = σ<sub>u</sub><sup>2</sup>/N<sub>i</sub> is the variance for the same area
 * a<sub>ij</sub> takes value of 1 if areas i and j are neighbors and 0 otherwise (with a<sub>ii</sub> set to 0)
 
-Modeling v<sub>i</sub> as exchangeable, together with the iCAR specification of u<sub>i</sub> originates
+Modeling v<sub>i</sub> as exchangeable, together with the iCAR specification of u<sub>i</sub>, originates
 what is known as the [Besag-York-Mollié (BYM) model](https://link.springer.com/article/10.1007/BF00116466).
 
 The temporal component is specified using a dynamic nonparametric formulation
@@ -131,13 +131,13 @@ is modelled dynamically, for example as γ<sub>t</sub>
 |γ<sub>t-1</sub> ∼ Normal(γ<sub>t-1</sub>, σ<sup>2</sup>
 ), and φ<sub>t</sub> has
 a Gaussian exchangeable prior, i.e. φ<sub>t</sub> ∼ Normal(0, 1/τ<sub>φ</sub>). In this way, the temporal part
-is further decomposed in two main effect, γ<sub>t</sub>
+is further decomposed in two main effect: γ<sub>t</sub>
 , which is structured, and φ<sub>t</sub>
 , which is left
 unstructured.
 
 The interaction between the spatial and the temporal
-dimensions, δ<sub>it</sub>, is simply added to the model, in a linear fashion.
+dimensions, δ<sub>it</sub>, is simply added to the model in a linear fashion.
 δ<sub>it</sub> follows a Gaussian distribution with a
 precision matrix that is equal to τ<sub>δ</sub>R<sub>δ</sub>. The precision matrix is, therefore, composed by
 a scalar, τ<sub>δ</sub>, and a structure matrix, R<sub>δ</sub>, which can be factorised as a Kronecker product
@@ -166,7 +166,7 @@ and the Basilica of San Lorenzo Maggiore area in the bottom left corner.
 
 The two temporal effects can be plotted as time series, as displayed below. The
 structured effect, γ<sub>t</sub> shows an increase towards the end of the year, while the unstructured
-one, φ<sub>t</sub>, captures well the monthly seasonality detected.
+one, φ<sub>t</sub>, captures well a monthly seasonality.
 
 ![Posterior temporal trend: unstructured effect φ<sub>t</sub> as solid line and temporally structured
 effect γ<sub>t</sub> as dashed line.](/images/posteriortemporaltrend.png)
